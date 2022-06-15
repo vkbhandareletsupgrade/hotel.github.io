@@ -189,7 +189,9 @@ section{
 }
 .amenities-section{
     padding: 3rem 0;
-    background: url('/images/contentbg.png') no-repeat center center/cover;
+    background: url('./images/contentbg.png') no-repeat center center/cover;
+    
+    
 }
 .card{
     padding: 1rem;
@@ -279,7 +281,9 @@ section{
   
   .contact-section{
     padding: 1rem 0;
-    background: url('./images/contentbg.png')no-repeat center center/cover;
+    background: url('./images/parallex-img.png')no-repeat center center/cover;
+    background-attachment: fixed;
+    background-color: var(--black);
     color: white;
   }
   .hotel-logo{
