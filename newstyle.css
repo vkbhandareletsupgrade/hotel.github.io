@@ -10,8 +10,16 @@
 }
 body{
     overflow-x:auto;
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow-x:hidden;
 }
 html{
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow-x:hidden;
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
