@@ -201,7 +201,7 @@ section{
 }
 .amenities-section{
     padding: 3rem 0;
-    background: url('/images/contentbg.png') no-repeat center center/cover;
+    background: url('./images/contentbg.png')no-repeat center center/cover;
 }
 .card{
     padding: 1rem;
