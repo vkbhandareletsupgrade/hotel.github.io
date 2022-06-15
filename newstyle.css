@@ -253,7 +253,7 @@ section{
 
 @media (min-width:300px) and (max-width:500px){
     .cards{
-        width: 170px;
+        width: 150px;
         height: 200px;
         margin: auto;
         margin-bottom: 2rem;
