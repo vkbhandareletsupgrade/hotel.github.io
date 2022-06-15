@@ -8,6 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x:auto;
+}
 html{
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -276,7 +279,7 @@ section{
   
   .contact-section{
     padding: 1rem 0;
-    background: url('../images/contentbg.png')no-repeat center center/cover;
+    background: url('./images/contentbg.png')no-repeat center center/cover;
     color: white;
   }
   .hotel-logo{
