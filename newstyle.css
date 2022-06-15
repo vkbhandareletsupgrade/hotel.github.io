@@ -1,0 +1,293 @@
+@font-face {
+    font-family: monsterrat;
+    src: url(../webfonts/Montserrat_2/Montserrat-VariableFont_wght.ttf);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 1.3rem;
+    line-height: 2;
+    text-align: justify;
+    transition: all .3s ease-in-out;
+}
+p:hover{
+    color: white !important;
+} 
+:root{
+    --black: black;
+    --gold: #ecc35e
+}
+ul{
+    list-style: none;
+}
+a,img,p,b,h1,h2,h3{
+    transition: all .3s ease-in-out;
+}
+
+
+
+/* header */
+header{
+    background-color: black;
+    font-size: 1.8rem;
+    padding: 5px 0;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.logo-container{
+    width: 100px;
+}
+
+.navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12rem;
+}
+.navlist .menu{
+    flex-direction: column;
+}
+.navlink a{
+    color: var(--gold);
+    position: relative;
+}
+.navlink a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    bottom: -15px;
+    background-color: #f4d83de3;
+    height: 12%;
+    width: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .navlink a:hover:before {
+    width: 100%;
+    margin: auto;
+  }
+
+.navlink a:hover{
+    font-weight: bold;
+}
+#hamburger{
+    color: var(--gold);
+    font-size: 3.4rem;
+}
+
+/* header end */
+
+@media (min-width:300px) and (max-width:500px){
+    .slider h1{
+        font-size: 4rem !important;
+    }
+    .slider{
+        padding: 10rem 0 3rem 0 !important;
+    }
+    .carousel-control-prev,.carousel-control-next
+    .carousel-control-prev,.carousel-control-next{
+        transform: translateY(60px);
+    }
+    .logo-container{
+        transform: translateX(-23px) !important;
+    }
+    .hamburger-container{
+        transform: translateX(-10px) !important;
+    }
+}
+
+
+
+  
+  
+  
+@media (min-width:50px) and (max-width:989.99px){
+    .main {
+        flex-direction: row;
+    }
+    .navlist{
+        width: 50%;
+        padding: 2rem;
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        top:100px;
+        left:0;
+        background-color: black;
+        transform: translateX(600px);
+        transition: all .3s ease-in;
+        text-align: center;
+        z-index: 1111;
+        
+    }
+    .navlist.show{
+        transform: translateX(0px);
+    }
+    .navlist.show .navlink {
+        margin-bottom: 2rem;
+    }
+    .hamburger-container{
+        transform: translateX(-80px);
+    }
+   
+}
+@media (min-width:990px) and (max-width:1900px){
+    .hamburger-container{
+        display: none;
+    }
+    .carousel-control-prev{
+        transform: translateX(-70px);
+    }
+    .carousel-control-next{
+        transform: translateX(70px);
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        display: inline-block;
+        width: 7rem;
+        height: 7rem;
+    }
+    
+}
+
+/* slider */
+.slider{
+    background: url('./images/parallex-img.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    background-color: var(--black);
+    color: white;
+    padding: 20rem 0;
+    width: 100%;
+}
+.slider h1{
+    font-size: 6rem;
+    color: var(--gold);
+}
+/* slider end */
+
+/* amenities */
+
+section{
+    font-size: 1.3rem;
+}
+.amenities-section{
+    padding: 3rem 0;
+    background: url('/images/contentbg.png') no-repeat center center/cover;
+}
+.card{
+    padding: 1rem;
+    background-color: var(--gold);
+    transition: all .3s ease-in-out;
+}
+.card:hover{
+    color: white;
+    background: url('./images/subscribe-bg.png') no-repeat center center/cover;
+}
+
+/* amenities end */
+
+/* gallery */
+
+.gallery-section{
+    padding: 5rem 0;
+    background: url('./images/parallex-img.png')no-repeat center center/cover;
+    background-attachment: fixed;
+    background-color: black;
+}
+.cards{
+    width: 250px;
+    height: 200px;
+}
+.cards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: all 1s ease-in-out;
+}
+.cards img:hover{
+    transform: scale(.9);
+    transform: rotate(360deg);
+}
+.gallery-section .bottom{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--gold);
+}
+
+
+@media (min-width:300px) and (max-width:500px){
+    .cards{
+        width: 200px;
+        height: 200px;
+    }
+}
+/* gallery */
+
+
+
+
+/* about */
+/* about */
+.about-section{
+    background-color: black !important;
+    background: url('../images/parallex-img.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 3rem 0;
+  }
+  .about-heading{
+    font-size: 4rem;
+    margin-bottom: 5rem;
+  }
+  .section-heading .hotel-logo{
+    width: 100px;
+    background-color: #383736e3;
+    border-radius: 50%;
+  }
+  .underline-img{
+    width: 15%;
+  }
+  .about-sub-heading{
+    font-size: 2.5rem !important;
+  }
+  /* about end */
+  /* contact */
+  
+  .contact-section{
+    padding: 1rem 0;
+    background: url('../images/contentbg.png')no-repeat center center/cover;
+    color: white;
+  }
+  .hotel-logo{
+    width: 10rem;
+  }
+  .contact-section h3{
+    text-transform: uppercase;
+  }
+  iframe{
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+  }
+/* contact end */
