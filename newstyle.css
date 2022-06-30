@@ -98,7 +98,7 @@ header{
   }
 
 .navlink a:hover{
-    font-weight: bold;
+    color:white;
 }
 #hamburger{
     color: var(--gold);
@@ -118,12 +118,10 @@ header{
     .carousel-control-prev,.carousel-control-next{
         transform: translateY(60px);
     }
-    .logo-container{
+    /* .logo-container{
         transform: translateX(-23px) !important;
-    }
-    .hamburger-container{
-        transform: translateX(-10px) !important;
-    }
+    } */
+   
 }
 
 
@@ -136,7 +134,7 @@ header{
         flex-direction: row;
     }
     .navlist{
-        width: 50%;
+        width: 100%;
         padding: 2rem;
         display: block;
         flex-direction: column;
@@ -201,7 +199,7 @@ section{
 }
 .amenities-section{
     padding: 3rem 0;
-    background: url('./images/contentbg.png')no-repeat center center/cover;
+    background: url('/images/contentbg.png') no-repeat center center/cover;
 }
 .card{
     padding: 1rem;
@@ -253,7 +251,7 @@ section{
 
 @media (min-width:360px) and (max-width:500px){
     .cards{
-        width: 170px;
+        width: 150px;
         height: 150px;
         margin: auto;
         margin-bottom: 2rem;
